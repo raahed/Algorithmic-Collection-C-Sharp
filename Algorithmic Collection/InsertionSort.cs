@@ -2,9 +2,19 @@
 {
     public partial class Algorithem
     {
-        public static int[] InsertionSort(int[] a)
+        public static void InsertionSort(int[] a)
         {
-            return a;
+            for (int i = 1; i < a.Length - 1 ; i++)
+            {
+                int key = a[i];
+                int j = i - 1;
+                while (j > 0 && a[i] > key)
+                {
+                    a[j + 1] = a[j];
+                    j--;
+                }
+                a[j + 1] = key;
+            }
         }
     }
 }

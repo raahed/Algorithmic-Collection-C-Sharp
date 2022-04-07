@@ -10,19 +10,19 @@ namespace Algorithmic_Testing_Class
         [TestMethod]
         public void MergeSort()
         {
-            GenerateTestArray(out int[] a, out int[] b);
+            GenerateTestArray(out int[] test, out int[] sorted);
 
-            int[] c = Algorithem.MergeSort(a);
-            Assert.AreEqual(b, c);
+            Algorithem.MergeSort(test);
+            Assert.IsTrue(IsEqual(test, sorted));
         }
 
         [TestMethod]
         public void InsertionSort()
         {
-            GenerateTestArray(out int[] a, out int[] b);
+            GenerateTestArray(out int[] test, out int[] sorted);
 
-            int[] c = Algorithem.InsertionSort(a);
-            Assert.AreEqual(b, c);
+            Algorithem.InsertionSort(test);
+            Assert.IsTrue(IsEqual(test, sorted));
         }
 
         static public void GenerateTestArray(out int[] unsorted, out int[] sorted)
@@ -34,9 +34,21 @@ namespace Algorithmic_Testing_Class
             for (int i = 0; i < unsorted.Length; i++)
                 unsorted[i] = random.Next(1, 1000);
 
-            sorted = new int[unsorted.Length];
+            sorted = (int[]) unsorted.Clone();
 
-            Array.Sort(unsorted);
+            Array.Sort(sorted);
+        }
+
+        static public bool IsEqual(int[] array1, int[] array2)
+        {
+            if (array1.Length != array2.Length)
+                return false;
+
+            for(int i = 0; i < array1.Length; i++)
+                if (array1[i] != array2[i])
+                    return false;
+
+            return true;
         }
     }
 }

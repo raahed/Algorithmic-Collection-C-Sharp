@@ -2,9 +2,9 @@
 {
     public partial class Algorithem
     {
-        public static int[] MergeSort(int[] a)
+        public static void MergeSort(int[] a)
         {
-            return a;
+            
         }
     }
 }
