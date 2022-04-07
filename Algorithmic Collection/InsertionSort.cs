@@ -2,7 +2,7 @@
 {
     public partial class Algorithem
     {
-        public static int[] MergeSort(int[] a)
+        public static int[] InsertionSort(int[] a)
         {
             return a;
         }
