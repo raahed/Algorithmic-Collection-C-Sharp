@@ -4,16 +4,13 @@
     {
         public static void InsertionSort(int[] a)
         {
-            for (int i = 1; i < a.Length - 1 ; i++)
+            for (int j = 1; j < a.Length; j++)
             {
-                int key = a[i];
-                int j = i - 1;
-                while (j > 0 && a[i] > key)
-                {
-                    a[j + 1] = a[j];
-                    j--;
-                }
-                a[j + 1] = key;
+                int key = a[j];
+                int i = j - 1;
+                for (; i > -1 && a[i] > key; i--)
+                    a[i + 1] = a[i];
+                a[i + 1] = key;
             }
         }
     }

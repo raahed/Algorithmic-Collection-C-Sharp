@@ -25,6 +25,16 @@ namespace Algorithmic_Testing_Class
             Assert.IsTrue(IsEqual(test, sorted));
         }
 
+        [TestMethod]
+        public void SelectionSort()
+        {
+            GenerateTestArray(out int[] test, out int[] sorted);
+
+            Algorithem.SelectionSort(test);
+            Assert.IsTrue(IsEqual(test, sorted));
+        }
+
+
         static public void GenerateTestArray(out int[] unsorted, out int[] sorted)
         {
             Random random = new Random();
