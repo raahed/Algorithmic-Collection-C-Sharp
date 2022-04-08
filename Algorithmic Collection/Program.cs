@@ -1,6 +1,4 @@
-﻿using Algorithmic_Collection;
-
-namespace MainClass
+﻿namespace MainClass
 {
     class Program
     {

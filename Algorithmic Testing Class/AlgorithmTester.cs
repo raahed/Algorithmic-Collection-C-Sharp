@@ -37,14 +37,25 @@ namespace Algorithmic_Tests
 
             Array.Sort(_sorted);
         }
+
+        static public void executeTest(Algorithmic_Collection.Algorithm)
+        {
+
+        }
+
         static protected bool IsEqual(int[] array1, int[] array2)
         {
             if (array1.Length != array2.Length)
                 return false;
 
+            int counter = 0;
+
             for (int i = 0; i < array1.Length; i++)
                 if (array1[i] != array2[i])
-                    return false;
+                    counter++;
+
+            if(counter != 0)
+                throw new FormatException($"Probably {counter} of {array1.Length} elements are not at the correct position!");
 
             return true;
         }

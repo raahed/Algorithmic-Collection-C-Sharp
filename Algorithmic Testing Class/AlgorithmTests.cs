@@ -11,7 +11,7 @@ namespace Algorithmic_Tests
         {
             int[] test = Unsorted;
 
-            Algorithem.HeapSort(test);
+            Algorithm.HeapSort(test);
             Assert.IsTrue(IsEqual(test, Sorted));
         }
 
@@ -20,7 +20,7 @@ namespace Algorithmic_Tests
         {
             int[] test = Unsorted;
 
-            Algorithem.MergeSort(test);
+            Algorithm.MergeSort(test);
             Assert.IsTrue(IsEqual(test, Sorted));
         }
 
@@ -29,7 +29,7 @@ namespace Algorithmic_Tests
         {
             int[] test = Unsorted;
 
-            Algorithem.InsertionSort(test);
+            Algorithm.InsertionSort(test);
             Assert.IsTrue(IsEqual(test, Sorted));
         }
 
@@ -38,7 +38,7 @@ namespace Algorithmic_Tests
         {
             int[] test = Unsorted;
 
-            Algorithem.SelectionSort(test);
+            Algorithm.SelectionSort(test);
             Assert.IsTrue(IsEqual(test, Sorted));
         }
     }
