@@ -1,6 +1,6 @@
 ﻿namespace Algorithmic_Collection
 {
-    partial class Algorithem
+    public partial class Algorithem
     {
         public static void SelectionSort(int[] a)
         {

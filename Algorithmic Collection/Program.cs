@@ -6,6 +6,7 @@ namespace MainClass
     {
         public static void Main(string[] args)
         {
+            Console.WriteLine("Use the Algorithm Tests Class for Unit Tests!");
         }
     }
 }
