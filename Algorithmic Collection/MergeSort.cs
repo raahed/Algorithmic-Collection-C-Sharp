@@ -23,8 +23,8 @@
                 int[] al = new int[n1 + 1];
                 int[] ar = new int[n2 + 1];
 
-                Array.Copy(a[p..(q+1)], al, n1);
-                Array.Copy(a[(q + 1)..(r+1)], ar, n2);
+                Array.Copy(a[p..(q + 1)], al, n1);
+                Array.Copy(a[(q + 1)..(r + 1)], ar, n2);
 
                 al[n1] = int.MaxValue;
                 ar[n2] = int.MaxValue;
