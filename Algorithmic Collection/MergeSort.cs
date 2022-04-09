@@ -19,10 +19,16 @@
             {
                 int n1 = q - p + 1;
                 int n2 = r - q;
-                int[] al = a[p..q];
-                int[] ar = a[(q + 1)..r];
-                al[n1 + 1] = int.MaxValue;
-                ar[n2 + 1] = int.MinValue;
+
+                int[] al = new int[n1 + 1];
+                int[] ar = new int[n2 + 1];
+
+                Array.Copy(a[p..(q+1)], al, n1);
+                Array.Copy(a[(q + 1)..(r+1)], ar, n2);
+
+                al[n1] = int.MaxValue;
+                ar[n2] = int.MaxValue;
+
                 int i = 0, j = 0;
                 for (int k = p; k <= r; k++)
                 {
@@ -42,7 +48,10 @@
 
         public static void MergeSort(int[] a)
         {
-            MergeSortFunctions.MergeSort(a, 0, a.Length);
+            if (a.Length < 2)
+                return;
+
+            MergeSortFunctions.MergeSort(a, 0, a.Length - 1);
         }
     }
 }
