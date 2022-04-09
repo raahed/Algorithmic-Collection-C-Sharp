@@ -4,6 +4,9 @@
     {
         public static void InsertionSort(int[] a)
         {
+            if (a.Length < 2)
+                return;
+
             for (int j = 1; j < a.Length; j++)
             {
                 int key = a[j];

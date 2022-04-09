@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Diagnostics;
 
 namespace Algorithmic_Tests
 {
     public class AlgorithmicTester
     {
-        private static readonly int _arrayLength = 999;
+        private static readonly int _arrayLength = 20;
 
         private static int[] _sorted;
         private static int[] _unsorted;
@@ -38,11 +39,6 @@ namespace Algorithmic_Tests
             Array.Sort(_sorted);
         }
 
-        static public void executeTest(Algorithmic_Collection.Algorithm)
-        {
-
-        }
-
         static protected bool IsEqual(int[] array1, int[] array2)
         {
             if (array1.Length != array2.Length)
@@ -54,7 +50,7 @@ namespace Algorithmic_Tests
                 if (array1[i] != array2[i])
                     counter++;
 
-            if(counter != 0)
+            if (counter != 0)
                 throw new FormatException($"Probably {counter} of {array1.Length} elements are not at the correct position!");
 
             return true;

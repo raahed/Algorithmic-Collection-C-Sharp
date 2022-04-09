@@ -4,6 +4,9 @@
     {
         public static void SelectionSort(int[] a)
         {
+            if (a.Length < 2)
+                return;
+
             for (int j = 0; j < a.Length - 1; j++)
             {
                 int key = j;

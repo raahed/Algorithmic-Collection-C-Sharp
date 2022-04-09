@@ -22,7 +22,8 @@
 
         public static void HeapSort(int[] a)
         {
-
+            if (a.Length < 2)
+                return;
         }
     }
 }
