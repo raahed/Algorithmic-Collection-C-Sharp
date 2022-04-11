@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithmic Collection", "Algorithmic Collection\Algorithmic Collection.csproj", "{507F38BD-0B8B-4D32-9B5F-12FE1AD76169}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithmic Collection", "Algorithmic Collection\Algorithmic Collection.csproj", "{507F38BD-0B8B-4D32-9B5F-12FE1AD76169}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithmic Testing Class", "Algorithmic Testing Class\Algorithmic Testing Class.csproj", "{C8F0371A-F3A1-4B74-AA2E-DFFF71940050}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithmic Testing Class", "Algorithmic Testing Class\Algorithmic Testing Class.csproj", "{C8F0371A-F3A1-4B74-AA2E-DFFF71940050}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Extended Data Types", "Extended Data Types\Extended Data Types.csproj", "{326AD9AC-BF64-4CD5-AB82-C740CA6AE4D1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{C8F0371A-F3A1-4B74-AA2E-DFFF71940050}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C8F0371A-F3A1-4B74-AA2E-DFFF71940050}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C8F0371A-F3A1-4B74-AA2E-DFFF71940050}.Release|Any CPU.Build.0 = Release|Any CPU
+		{326AD9AC-BF64-4CD5-AB82-C740CA6AE4D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{326AD9AC-BF64-4CD5-AB82-C740CA6AE4D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{326AD9AC-BF64-4CD5-AB82-C740CA6AE4D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{326AD9AC-BF64-4CD5-AB82-C740CA6AE4D1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
