@@ -1,10 +1,10 @@
-﻿namespace MainClass
+﻿namespace Algorithmic_Collection
 {
     class Program
     {
-        public static void Main(string[] args)
+        static void Main(string[] args)
         {
-            Console.WriteLine("Use the Algorithm Tests Class for Unit Tests!");
+
         }
     }
 }

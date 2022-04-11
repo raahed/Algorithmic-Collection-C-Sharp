@@ -5,7 +5,7 @@ namespace Algorithmic_Tests
 {
     public class AlgorithmicTester
     {
-        private static readonly int _arrayLength = 20;
+        private static readonly int _arrayLength = 18000;
 
         private static int[] _sorted;
         private static int[] _unsorted;
