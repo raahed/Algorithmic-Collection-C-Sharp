@@ -1,6 +1,6 @@
 ﻿namespace Extended_Data_Types
 {
-    public class LinkedList
+    public class SingleLinkedList
     {
         public class Element
         {
@@ -50,20 +50,20 @@
             }
         }
 
-        public LinkedList(params dynamic[] elementsValues)
+        public SingleLinkedList(params dynamic[] elementsValues)
         {
             foreach (dynamic elementValue in elementsValues)
                 Append(elementValue);
         }
 
-        public LinkedList RemoveFirst()
+        public SingleLinkedList RemoveFirst()
         {
             _first = _first.Next;
 
             return this;
         }
 
-        public LinkedList InsertAfter(Element element, dynamic value)
+        public SingleLinkedList InsertAfter(Element element, dynamic value)
         {
             Element next = element.Next;
             element.Next = new Element(value);
@@ -71,7 +71,7 @@
 
             return this;
         }
-        public LinkedList Append(dynamic value = null)
+        public SingleLinkedList Append(dynamic value = null)
         {
             if (_last == null)
                 _last = new Element(value);
@@ -84,7 +84,7 @@
             return this;
         }
 
-        public LinkedList Remove(Element element)
+        public SingleLinkedList Remove(Element element)
         {
             Element result = Find(element);
 
@@ -96,7 +96,7 @@
             return this;
         }
 
-        public LinkedList RemoveAll()
+        public SingleLinkedList RemoveAll()
         {
             _first = null;
             _last = null;

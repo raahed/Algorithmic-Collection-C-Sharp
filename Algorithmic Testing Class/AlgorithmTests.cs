@@ -16,6 +16,15 @@ namespace Algorithmic_Tests
         }
 
         [TestMethod]
+        public void QuickSort()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.QuickSort(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
         public void MergeSort()
         {
             int[] test = Unsorted;
