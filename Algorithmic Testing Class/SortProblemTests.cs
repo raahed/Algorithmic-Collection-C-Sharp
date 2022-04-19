@@ -1,10 +1,11 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithmic_Collection;
+using System;
 
 namespace Algorithmic_Tests
 {
     [TestClass]
-    public class AlgorithmicTests : AlgorithmicTester
+    public class SortProblemTests : AlgorithmicTester
     {
         [TestMethod]
         public void HeapSort()
@@ -30,6 +31,15 @@ namespace Algorithmic_Tests
             int[] test = Unsorted;
 
             Algorithm.MergeSort(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
+        public void MergeSortWithoutSentinel()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.MergeSortWithoutSentinel(test);
             Assert.IsTrue(IsEqual(test, Sorted));
         }
 
