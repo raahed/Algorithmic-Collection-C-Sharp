@@ -8,6 +8,15 @@ namespace Algorithmic_Tests
     public class SortProblemTests : AlgorithmicTester
     {
         [TestMethod]
+        public void BubbleSort()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.BubbleSort(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
         public void HeapSort()
         {
             int[] test = Unsorted;
