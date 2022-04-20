@@ -17,6 +17,24 @@ namespace Algorithmic_Tests
         }
 
         [TestMethod]
+        public void CountingSort()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.CountingSort(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
+        public void RadixSort()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.RadixSort(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
         public void HeapSort()
         {
             int[] test = Unsorted;

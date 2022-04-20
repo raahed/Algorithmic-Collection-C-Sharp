@@ -5,11 +5,20 @@ Using Component tests like the Microsoft `Assert` -> https://docs.microsoft.com/
 
 ## Overview
 
-#### Algorithmic
+#### Sort Algorithmic
+- [Bubble Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/BubbleSort.cs)
 - [Insertion Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/InsertionSort.cs)
 - [Selection Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/SelectionSort.cs)
 - [Heap Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/HeapSort.cs)
 - [Merge Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/MergeSort.cs)
+- [Quick Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/QuickSort.cs)
+
+##### Linear Sort
+- [RadixSort Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/RadixSort.cs)
+- [Counting Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/CountingSort.cs)
+
+#### Searh Algorithmic
+- [Binary Search](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/BinarySearch.cs)
 
 #### Extended Data Types
 - [Single Linked List](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Extended%20Data%20Types/SingleLinkedList.cs)
