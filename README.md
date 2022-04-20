@@ -17,7 +17,7 @@ Using Component tests like the Microsoft `Assert` -> https://docs.microsoft.com/
 - [RadixSort Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/RadixSort.cs)
 - [Counting Sort](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/CountingSort.cs)
 
-#### Searh Algorithmic
+#### Search Algorithmic
 - [Binary Search](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/BinarySearch.cs)
 
 #### Extended Data Types
