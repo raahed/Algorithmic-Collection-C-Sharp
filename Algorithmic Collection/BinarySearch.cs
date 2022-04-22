@@ -37,7 +37,7 @@ namespace Algorithmic_Collection
                     q = i;
                 else
                     p = i;
-                
+
                 i = p + ((q - p) / 2);
             }
 
