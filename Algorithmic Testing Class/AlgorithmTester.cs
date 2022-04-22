@@ -48,7 +48,7 @@ namespace Algorithmic_Tests
                 _unsorted[i] = random.Next(1, 1000);
 
             for (int i = 0; i < _unsortedDigitsLength.Length; i++)
-                _unsorted[i] = random.Next(100, 1000);
+                _unsortedDigitsLength[i] = random.Next(100, 1000);
 
             _sorted = (int[])_unsorted.Clone();
             _sortedDigitsLength = (int[])_unsortedDigitsLength.Clone();
