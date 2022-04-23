@@ -7,18 +7,26 @@ namespace Algorithmic_Tests
     [TestClass]
     public class SearchProblemTests : AlgorithmicTester
     {
+
         [TestMethod]
         public void BinarySearchRekursiv()
         {
             int[] test = Sorted;
 
-            Random r = new Random();
+            int subject = random.Next(ArrayMinValue, ArrayMaxValue);
 
-            int ci = r.Next(0, test.Length);
-            int cv = test[ci];
+            int result = Algorithm.BinarySearchRecursiv(test, subject);
 
-            int result = Algorithm.BinarySearchRecursiv(test, cv);
-            Assert.IsTrue(cv == test[result]);
+            if (result == -1 && !Array.Exists(test, elm => elm == subject))
+            {
+                Assert.IsTrue(true);
+                Console.WriteLine($"Value not found {subject}");
+            }
+            else
+            {
+                Assert.IsTrue(subject == test[result]);
+                Console.WriteLine($"Value {subject} found at index {result}");
+            }
         }
 
         [TestMethod]
@@ -26,13 +34,20 @@ namespace Algorithmic_Tests
         {
             int[] test = Sorted;
 
-            Random r = new Random();
+            int subject = random.Next(ArrayMinValue, ArrayMaxValue);
 
-            int ci = r.Next(0, test.Length);
-            int cv = test[ci];
+            int result = Algorithm.BinarySearchRecursiv(test, subject);
 
-            int result = Algorithm.BinarySeach(test, cv);
-            Assert.IsTrue(cv == test[result]);
+            if (result == -1 && !Array.Exists(test, elm => elm == subject))
+            {
+                Assert.IsTrue(true);
+                Console.WriteLine($"Value not found {subject}");
+            }
+            else
+            {
+                Assert.IsTrue(subject == test[result]);
+                Console.WriteLine($"Value {subject} found at index {result}");
+            }
         }
     }
 }

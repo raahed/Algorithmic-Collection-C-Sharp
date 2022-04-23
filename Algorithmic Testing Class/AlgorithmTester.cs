@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Diagnostics;
 
 namespace Algorithmic_Tests
 {
@@ -7,11 +6,16 @@ namespace Algorithmic_Tests
     {
         private static readonly int _arrayLength = 18000;
 
+        private static readonly int _arrayMinValue = 1;
+        private static readonly int _arrayMaxValue = 1000;
+
         private static int[] _sorted;
         private static int[] _unsorted;
 
         private static int[] _sortedDigitsLength;
         private static int[] _unsortedDigitsLength;
+
+        protected static Random random = new Random(Guid.NewGuid().GetHashCode());
 
         protected static int[] Sorted
         {
@@ -28,6 +32,16 @@ namespace Algorithmic_Tests
             }
         }
 
+        protected static int ArrayMinValue
+        {
+            get { return _arrayMinValue; }
+        }
+
+        protected static int ArrayMaxValue
+        {
+            get { return _arrayMaxValue; }
+        }
+
         protected static int[] SortedDigitsLength
         {
             get { return (int[])_sortedDigitsLength.Clone(); }
@@ -39,13 +53,11 @@ namespace Algorithmic_Tests
         }
         static AlgorithmicTester()
         {
-            Random random = new Random(Guid.NewGuid().GetHashCode());
-
             _unsorted = new int[_arrayLength];
             _unsortedDigitsLength = new int[_arrayLength];
 
             for (int i = 0; i < _unsorted.Length; i++)
-                _unsorted[i] = random.Next(1, 1000);
+                _unsorted[i] = random.Next(_arrayMinValue, _arrayMaxValue);
 
             for (int i = 0; i < _unsortedDigitsLength.Length; i++)
                 _unsortedDigitsLength[i] = random.Next(100, 1000);
