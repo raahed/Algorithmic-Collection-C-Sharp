@@ -20,7 +20,6 @@
                     return -1;
 
                 return BinarySearchRecursiv(a, value, p, q);
-
             }
         }
 
