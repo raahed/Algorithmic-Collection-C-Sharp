@@ -9,7 +9,7 @@ namespace Algorithmic_Tests
     {
 
         [TestMethod]
-        public void BinarySearchRekursiv()
+        public void BinarySearchRecursiv()
         {
             int[] test = Sorted;
 

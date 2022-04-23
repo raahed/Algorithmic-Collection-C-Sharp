@@ -79,6 +79,24 @@ namespace Algorithmic_Tests
         }
 
         [TestMethod]
+        public void InsertionSortRecursiv()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.InsertionSortRecursiv(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
+        public void InsertionSortRecursivLastSeperated()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.InsertionSortRecursivLastSeperated(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
         public void SelectionSort()
         {
             int[] test = Unsorted;
