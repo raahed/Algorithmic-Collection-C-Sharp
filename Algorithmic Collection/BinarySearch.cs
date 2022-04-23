@@ -21,6 +21,9 @@ namespace Algorithmic_Collection
                     q = i;
                 else
                     p = i;
+                
+                if (q - p <= 1)
+                    return -1;
 
                 return BinarySearchRecursiv(a, value, p, q);
 
@@ -38,6 +41,9 @@ namespace Algorithmic_Collection
                 else
                     p = i;
 
+                if (q - p <= 1)
+                    return -1;
+                
                 i = p + ((q - p) / 2);
             }
 
