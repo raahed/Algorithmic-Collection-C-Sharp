@@ -1,6 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Algorithmic_Collection;
-using System;
 
 namespace Algorithmic_Tests
 {
