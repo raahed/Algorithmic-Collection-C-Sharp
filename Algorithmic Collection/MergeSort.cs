@@ -66,50 +66,37 @@
                 Array.Copy(a[p..(q + 1)], al, n1);
                 Array.Copy(a[(q + 1)..(r + 1)], ar, n2);
 
-                int i = 0, j = 0;
-                for (int k = p; k <= r; k++)
+                int i = 0, j = 0, k = p;
+
+                while (i < n1 && j < n2)
                 {
-                    if (j == n2)
+                    if (al[i] <= ar[j])
                     {
                         a[k] = al[i];
                         i++;
                     }
-                    else if (i == n1)
+                    else
                     {
                         a[k] = ar[j];
                         j++;
                     }
-                    else
-                    {
-                        if (al[i] <= ar[j])
-                        {
-                            a[k] = al[i];
-                            i++;
-                        }
-                        else
-                        {
-                            a[k] = ar[j];
-                            j++;
-                        }
-                    }
+                    k++;
+
                 }
+
+                if (i < n1)
+                    Array.Copy(al, i, a, k, n1 - i);
             }
 
         }
 
         public static void MergeSortWithoutSentinel(int[] a)
         {
-            if (a.Length < 2)
-                return;
-
             MergeSortFunctions.MergeSortWithoutSentinel(a, 0, a.Length - 1);
         }
 
         public static void MergeSort(int[] a)
         {
-            if (a.Length < 2)
-                return;
-
             MergeSortFunctions.MergeSort(a, 0, a.Length - 1);
         }
     }

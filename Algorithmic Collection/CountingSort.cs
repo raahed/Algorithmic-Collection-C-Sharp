@@ -2,7 +2,7 @@
 {
     public partial class Algorithm
     {
-        public static void CountingSort(int[] a)
+        public static void CountingSort(int[] a, int i)
         {
 
         }

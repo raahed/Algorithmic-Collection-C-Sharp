@@ -16,15 +16,6 @@ namespace Algorithmic_Tests
         }
 
         [TestMethod]
-        public void CountingSort()
-        {
-            int[] test = UnsortedDigitsLength;
-
-            Algorithm.CountingSort(test);
-            Assert.IsTrue(IsEqual(test, SortedDigitsLength));
-        }
-
-        [TestMethod]
         public void RadixSort()
         {
             int[] test = UnsortedDigitsLength;

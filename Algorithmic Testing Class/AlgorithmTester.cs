@@ -4,7 +4,7 @@ namespace Algorithmic_Tests
 {
     public class AlgorithmicTester
     {
-        private static readonly int _arrayLength = 18000;
+        private static readonly int _arrayLength = 200;
 
         private static readonly int _arrayMinValue = 1;
         private static readonly int _arrayMaxValue = 1000;
