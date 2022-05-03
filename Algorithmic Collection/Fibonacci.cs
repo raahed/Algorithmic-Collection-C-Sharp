@@ -27,9 +27,6 @@
 
         public static uint FibonacciBottomUp(uint n)
         {
-            if (n == 1 || n == 2)
-                return 1;
-
             uint[] bottomUp = new uint[n + 1];
             bottomUp[1] = bottomUp[2] = 1;
 
