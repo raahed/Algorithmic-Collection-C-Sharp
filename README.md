@@ -20,6 +20,9 @@ Using Component tests like the Microsoft `Assert` -> https://docs.microsoft.com/
 #### Search Algorithmic
 - [Binary Search](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/BinarySearch.cs)
 
+#### Math Algorithmic
+- [Fibonacci sequence](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Algorithmic%20Collection/Fibonacci.cs)
+
 #### Extended Data Types
 - [Single Linked List](https://github.com/raahed/Algorithmic-and-Extended-Data-Types-Collection-C-Sharp/blob/master/Extended%20Data%20Types/SingleLinkedList.cs)
 
