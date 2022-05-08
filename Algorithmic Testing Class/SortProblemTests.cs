@@ -43,6 +43,15 @@ namespace Algorithmic_Tests
         }
 
         [TestMethod]
+        public void QuickSortHoare()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.QuickSortHoare(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
         public void QuickSortOptSameKeys()
         {
             int[] test = Unsorted;

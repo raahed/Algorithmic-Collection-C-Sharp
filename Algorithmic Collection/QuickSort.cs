@@ -28,6 +28,33 @@
                 return i + 1;
             }
 
+            public static void QuickSortHoare(int[] a, int p, int r)
+            {
+                if (p < r)
+                {
+                    int q = PartitionHoare(a, p, r);
+                    QuickSortHoare(a, p, q - 1);
+                    QuickSortHoare(a, q + 1, r);
+                }
+            }
+
+            public static int PartitionHoare(int[] a, int p, int r)
+            {
+                int x = a[p];
+                int i = p - 1;
+                int j = r + 1;
+                while (true)
+                {
+                    do { j--; } while (a[j] <= x);
+                    do { i++; } while (a[i] >= x);
+                    if (i < j)
+                        (a[i], a[j]) = (a[j], a[i]);
+                    else
+                        return j;
+
+                }
+            }
+
             public static void QuickSortOptSameKeys(int[] a, int p, int r)
             {
                 if (p < r)
@@ -56,8 +83,8 @@
 
                 if (sameKeys)
                     return (p + r) / 2;
-               else 
-                return i + 1;
+                else
+                    return i + 1;
             }
 
             public static void QuickSortReverse(int[] a, int p, int r)
@@ -88,6 +115,11 @@
         public static void QuickSort(int[] a)
         {
             QuickSortFunctions.QuickSort(a, 0, a.Length - 1);
+        }
+
+        public static void QuickSortHoare(int[] a)
+        {
+            QuickSortFunctions.QuickSortHoare(a, 0, a.Length - 1);
         }
 
         public static void QuickSortReverse(int[] a)
