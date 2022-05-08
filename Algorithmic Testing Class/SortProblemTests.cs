@@ -43,6 +43,24 @@ namespace Algorithmic_Tests
         }
 
         [TestMethod]
+        public void QuickSortOptSameKeys()
+        {
+            int[] test = Unsorted;
+
+            Algorithm.QuickSortOptSameKeys(test);
+            Assert.IsTrue(IsEqual(test, Sorted));
+        }
+
+        [TestMethod]
+        public void QuickSortReverse()
+        {
+            int[] test = { 1, 2, 3, 4 };
+
+            Algorithm.QuickSortReverse(test);
+            Assert.IsTrue(IsEqual(test, new int[] { 4, 3, 2, 1 }));
+        }
+
+        [TestMethod]
         public void MergeSort()
         {
             int[] test = Unsorted;
