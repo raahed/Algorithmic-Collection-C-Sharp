@@ -71,13 +71,16 @@
                 int x = a[r];
                 int i = p - 1;
                 for (int j = p; j <= r - 1; j++)
+                {
+                    if (a[j] != x)
+                        sameKeys = false;
                     if (a[j] <= x)
                     {
                         i++;
-                        if (a[j] != x)
-                            sameKeys = false;
+
                         (a[j], a[i]) = (a[i], a[j]);
                     }
+                }
 
                 (a[i + 1], a[r]) = (a[r], a[i + 1]);
 
